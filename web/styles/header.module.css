@@ -1,0 +1,18 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header nav {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.header nav .headerNavLink {
+  margin: 0 2em;
+  color: black;
+  text-decoration: none;
+  padding: 1em 1.5em;
+}

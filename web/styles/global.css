@@ -1,0 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Nunito&family=Open+Sans&display=swap");
+
+* {
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-family: "Open Sans", sans-serif;
+}
