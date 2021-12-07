@@ -1,6 +1,8 @@
 import React from "react";
 
-const HomePage = () => {
+import styles from "../styles/index.module.css";
+
+const HomePage: React.FC = (): JSX.Element => {
     return (
         <h1>Hello World from somewhere...</h1>
     )
