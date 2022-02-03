@@ -1,7 +1,7 @@
 .topMain {
   height: 100vh;
   background-image: url("/fun_training.jpg"); /* url("/tic-2021.jpg"); */
-  background-position: top 30%, right 0;
+  background-size: cover;
 }
 
 .heroText {
@@ -20,4 +20,20 @@
   max-width: 50%;
   word-wrap: break-word;
   font-weight: bolder;
+}
+
+.activityDesc {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.activityDesc img {
+  max-width: 30%;
+}
+
+.activityDesc p {
+  max-width: 40%;
+  word-wrap: break-word;
 }

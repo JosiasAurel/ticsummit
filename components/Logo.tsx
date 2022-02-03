@@ -5,7 +5,7 @@ import Image from "next/image";
 const TICLogo: React.FC = (): JSX.Element => {
     return (
         <div>
-            <Image src="/TIC.png" width="50" height="50" />
+            <Image src="/logo.png" width="50" height="50" />
         </div>
     )
 }

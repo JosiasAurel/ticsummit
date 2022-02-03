@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(21, 130, 255);
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.footer a {
+  color: black;
+}
+
+.footer__top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.footer__top * {
+  margin: 0 1%;
+}
+
+.pageNav * {
+  margin: 3% 0;
+}
+
+.socialNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.socialNav img {
+  max-width: 30px;
+}

@@ -1,0 +1,53 @@
+import React from "react";
+
+import styles from "../styles/footer.module.css";
+
+
+const Footer: React.FC = () => {
+    return (
+        <footer className={styles.footer}>
+            <div className={styles.footer__top}>
+                <ul className={styles.criteria}>
+                    <li>Must be a student residing in Cameroon</li>
+                    <li>Age between 13 and 20</li>
+                    <li>Be passionate about solving problems in your community</li>
+                </ul>
+                <ul className={styles.pageNav} style={{
+                    listStyleType: "none"
+                }}>
+                    <li>
+                        <a href="#">
+                            Apply for the event
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Hackathons
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/blog">Blog</a>
+                    </li>
+                    <li>
+                        <a href="/contact">Get In Touch</a>
+                    </li>
+                </ul>
+                <div>
+                    <h3>Offices</h3>
+                    <p>Montee Sciences, Yaounde, Cameroon</p>
+                    <p>+237 679364294</p>
+                </div>
+            </div>
+            <nav className={styles.socialNav}>
+                <a href="https://twitter.com/tic_summit">
+                    <img src="/Twitter_Bird.png" alt="Twitter" />
+                </a>
+                <a href="https://www.facebook.com/TiCsummit">
+                    <img src="/Facebook-logo.png" alt="Facebook" />
+                </a>
+            </nav>
+        </footer>
+    )
+}
+
+export default Footer;
