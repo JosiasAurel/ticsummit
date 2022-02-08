@@ -4,8 +4,10 @@ import Image from "next/image";
 
 const TICLogo: React.FC = (): JSX.Element => {
     return (
-        <div>
-            <Image src="/logo.png" width="50" height="50" />
+        <div style={{
+            margin: "0.5em"
+        }}>
+            <Image src="/logo.png" width="40" height="40" />
         </div>
     )
 }

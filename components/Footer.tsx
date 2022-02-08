@@ -1,5 +1,6 @@
 import React from "react";
-
+// import icons
+import { Twitter, Facebook, Linkedin } from "@geist-ui/react-icons";
 import styles from "../styles/footer.module.css";
 
 
@@ -35,15 +36,18 @@ const Footer: React.FC = () => {
                 <div>
                     <h3>Offices</h3>
                     <p>Montee Sciences, Yaounde, Cameroon</p>
-                    <p>+237 679364294</p>
+                    <p><a href="tel:237679364294">+(237) 679364294</a></p>
                 </div>
             </div>
             <nav className={styles.socialNav}>
                 <a href="https://twitter.com/tic_summit">
-                    <img src="/Twitter_Bird.png" alt="Twitter" />
+                    <Twitter />
                 </a>
                 <a href="https://www.facebook.com/TiCsummit">
-                    <img src="/Facebook-logo.png" alt="Facebook" />
+                    <Facebook />
+                </a>
+                <a href="#">
+                    <Linkedin />
                 </a>
             </nav>
         </footer>

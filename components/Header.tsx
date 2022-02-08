@@ -1,7 +1,6 @@
 import React from "react";
 
 import TICLogo from "./Logo";
-
 import styles from "../styles/header.module.css";
 
 import Link from "next/link";
@@ -12,17 +11,17 @@ const Header: React.FC = (): JSX.Element => {
             <TICLogo />
 
             <nav className={styles.navLinks}>
-                <Link href="/blog">
-                    <a className={styles.headerNavLink}>Blog</a>
-                </Link>
                 <Link href="/events">
                     <a className={styles.headerNavLink}>Events</a>
                 </Link>
-                <Link href="/hackathons">
-                    <a className={styles.headerNavLink}>Hackathons</a>
+                <Link href="/curriculum">
+                    <a className={styles.headerNavLink}>Curriculum</a>
                 </Link>
-                <Link href="contact">
-                    <a className={styles.headerNavLink}>Get In Touch</a>
+                <Link href="/register">
+                    <a className={styles.headerNavLink}>Register</a>
+                </Link>
+                <Link href="/contact">
+                    <a className={styles.headerNavLink}>Contact</a>
                 </Link>
             </nav>
         </header>
