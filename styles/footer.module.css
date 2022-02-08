@@ -1,4 +1,5 @@
 .footer {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -17,6 +18,7 @@
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  width: 100%;
 }
 
 .footer__top * {
@@ -34,6 +36,6 @@
   align-content: center;
 }
 
-.socialNav img {
-  max-width: 30px;
+.socialNav * {
+  margin: 0.5em 0.3em;
 }

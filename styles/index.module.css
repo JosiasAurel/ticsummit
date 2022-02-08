@@ -1,25 +1,30 @@
 .topMain {
   height: 100vh;
-  background-image: url("/fun_training.jpg"); /* url("/tic-2021.jpg"); */
-  background-size: cover;
-}
-
-.heroText {
-  position: relative;
-  top: 20%;
-  width: 100vw;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  text-align: center;
+  background-color: #235ea0;
 }
 
-.heroText h1 {
-  color: white;
-  font-size: 3em;
+.topMain img {
   max-width: 50%;
-  word-wrap: break-word;
-  font-weight: bolder;
+}
+
+.topMain * {
+  margin: 0 0.5em;
+}
+
+.topCTA {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-size: 1.2em;
+}
+
+.topCTA * {
+  margin-bottom: 10%;
 }
 
 .activityDesc {
@@ -34,6 +39,14 @@
 }
 
 .activityDesc p {
+  font-size: 1.5em;
   max-width: 40%;
   word-wrap: break-word;
+}
+
+@media screen and (max-width: 450px) {
+  .heroText h1 {
+    font-size: 2.5em;
+    max-width: 90%;
+  }
 }
