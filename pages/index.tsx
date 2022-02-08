@@ -6,9 +6,10 @@ import styles from "../styles/index.module.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
+import Special from "../components/Special";
 
 // import content
-import { heroText } from "../content/index";
+import { heroText, specials } from "../content/index";
 const HomePage: React.FC = (): JSX.Element => {
     return (
         <>
@@ -27,11 +28,16 @@ const HomePage: React.FC = (): JSX.Element => {
                     </p>
                     <Button text="Sponsor Us Now" />
                 </div>
-                <div>
-
-                </div>
             </main>
 
+            <div className={styles.specialsCtn}>
+                <h1>What Makes TiC Special ?</h1>
+                <div>
+                    {specials.map((content, idx) => {
+                        return <Special number={idx + 1} description={content} />
+                    })}
+                </div>
+            </div>
             <div>
                 <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
                     <div style={{ width: "80%" }}>

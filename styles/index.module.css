@@ -1,5 +1,5 @@
 .topMain {
-  height: 100vh;
+  height: 90vh;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -44,6 +44,9 @@
   word-wrap: break-word;
 }
 
+.specialsCtn {
+  margin: 1em;
+}
 @media screen and (max-width: 450px) {
   .heroText h1 {
     font-size: 2.5em;
