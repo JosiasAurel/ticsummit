@@ -5,20 +5,27 @@ import styles from "../styles/index.module.css";
 // import custom components
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Button from "../components/Button";
 
+// import content
+import { heroText } from "../content/index";
 const HomePage: React.FC = (): JSX.Element => {
     return (
         <>
             <head>
-                <title>TiC - Learn to Build & Build to Serve</title>
+                <title>TiC - Learn to Build, Build to Serve</title>
             </head>
             <Header />
             <main className={styles.topMain}>
-                <div className={styles.heroText}>
+                <img src="/fun_training.jpg" alt="training" />
+                <div className={styles.topCTA}>
                     <h1>
-                        TiC empowers young minds to address problems in their
-                        community by building creative and innovative solutions.
+                        About the Program
                     </h1>
+                    <p>
+                        {heroText}
+                    </p>
+                    <Button text="Sponsor Us Now" />
                 </div>
                 <div>
 
