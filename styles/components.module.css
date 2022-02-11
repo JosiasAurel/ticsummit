@@ -11,9 +11,13 @@
 
 .specialCard h1 {
   color: #f7cb48;
+  margin: 0 1em;
+  font-weight: bolder;
+  font-variant-numeric: proportional-nums;
 }
 
 .specialCard p {
   color: white;
+  margin: 0.8em;
 }
 /* Special Card - End */
