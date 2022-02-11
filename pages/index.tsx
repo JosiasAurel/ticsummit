@@ -11,6 +11,11 @@ import Special from "../components/Special";
 // import content
 import { heroText, specials } from "../content/index";
 const HomePage: React.FC = (): JSX.Element => {
+
+    // special image
+    const [specialImage, setSpecialImage] = React.useState<string>("/cam_largest.jpg");
+    const specialImageEl = React.useRef(null);
+
     return (
         <>
             <head>
@@ -30,12 +35,26 @@ const HomePage: React.FC = (): JSX.Element => {
                 </div>
             </main>
 
-            <div className={styles.specialsCtn}>
+            <div style={{ margin: "1em" }}>
                 <h1>What Makes TiC Special ?</h1>
-                <div>
-                    {specials.map((content, idx) => {
-                        return <Special number={idx + 1} description={content} />
-                    })}
+                <div className={styles.specialsCtn}>
+                    <div>
+                        {specials.map((special, idx) => {
+                            return <Special
+                                number={idx + 1}
+                                description={special.content}
+                                image={special.image}
+                                clickAction={(v: string) => {
+                                    setSpecialImage(v);
+                                    specialImageEl.current.classList.add("imageMoveUpClass");
+                                    setTimeout(() => {
+                                        specialImageEl.current.classList.remove("imageMoveUpClass");
+                                    }, 1000);
+                                }}
+                            />
+                        })}
+                    </div>
+                    <img ref={specialImageEl} className={styles.specialImage} src={specialImage} alt={specialImage.split("_").join(" ")} />
                 </div>
             </div>
             <div>

@@ -10,3 +10,21 @@ body {
   margin: 0 auto;
   overflow-x: hidden;
 }
+
+.imageMoveUpClass {
+  animation-name: imageMoveUp;
+  animation-duration: 0.4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes imageMoveUp {
+  from {
+    transform: translateY(-1px);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+}
