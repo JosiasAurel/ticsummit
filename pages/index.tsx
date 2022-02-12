@@ -11,6 +11,7 @@ import StayInTouch from "../components/StayInTouch";
 
 // import content
 import { heroText, specials } from "../content/index";
+
 const HomePage: React.FC = (): JSX.Element => {
 
     // special image
@@ -24,7 +25,7 @@ const HomePage: React.FC = (): JSX.Element => {
             </head>
             <Header />
             <main className={styles.topMain}>
-                <img src="/fun_training.jpg" alt="training" />
+                <img loading="lazy" src="/fun_training.jpg" alt="training" />
                 <div className={styles.topCTA}>
                     <h1>
                         About the Program
@@ -71,7 +72,7 @@ const HomePage: React.FC = (): JSX.Element => {
             </div>
 
             <div className={styles.activityDesc}>
-                <img src="/hero_desc.jpg" alt="Activity Description" />
+                <img loading="lazy" src="/hero_desc.jpg" alt="Activity Description" />
                 <p>
                     TiC aims a providing Cameroonian students with opportunities for self-initiative that are led by their ability to identify, understand and address community challenges with creative and innovative business solution.
 
