@@ -25,7 +25,7 @@ const Header: React.FC = (): JSX.Element => {
                 </Link>
             </nav>
         </header>
-    )
-}
+    );
+};
 
 export default Header;

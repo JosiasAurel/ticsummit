@@ -13,9 +13,9 @@ import StayInTouch from "../components/StayInTouch";
 import { heroText, specials } from "../content/index";
 
 const HomePage: React.FC = (): JSX.Element => {
-
     // special image
-    const [specialImage, setSpecialImage] = React.useState<string>("/cam_largest.jpg");
+    const [specialImage, setSpecialImage] =
+        React.useState<string>("/cam_largest.jpg");
     const specialImageEl = React.useRef(null);
 
     return (
@@ -27,15 +27,9 @@ const HomePage: React.FC = (): JSX.Element => {
             <main className={styles.topMain}>
                 <img loading="lazy" src="/fun_training.jpg" alt="training" />
                 <div className={styles.topCTA}>
-                    <h1>
-                        About the Program
-                    </h1>
-                    <p>
-                        {heroText}
-                    </p>
-                    <Button>
-                        Sponsor Us Now
-                    </Button>
+                    <h1>About the Program</h1>
+                    <p>{heroText}</p>
+                    <Button>Sponsor Us Now</Button>
                 </div>
             </main>
 
@@ -44,39 +38,70 @@ const HomePage: React.FC = (): JSX.Element => {
                 <div className={styles.specialsCtn}>
                     <div>
                         {specials.map((special, idx) => {
-                            return <Special
-                                number={idx + 1}
-                                description={special.content}
-                                image={special.image}
-                                clickAction={(v: string) => {
-                                    setSpecialImage(v);
-                                    specialImageEl.current.classList.add("imageMoveUpClass");
-                                    setTimeout(() => {
-                                        specialImageEl.current.classList.remove("imageMoveUpClass");
-                                    }, 1000);
-                                }}
-                            />
+                            return (
+                                <Special
+                                    number={idx + 1}
+                                    description={special.content}
+                                    image={special.image}
+                                    clickAction={(v: string) => {
+                                        setSpecialImage(v);
+                                        specialImageEl.current.classList.add(
+                                            "imageMoveUpClass"
+                                        );
+                                        setTimeout(() => {
+                                            specialImageEl.current.classList.remove(
+                                                "imageMoveUpClass"
+                                            );
+                                        }, 1000);
+                                    }}
+                                />
+                            );
                         })}
                     </div>
-                    <img ref={specialImageEl} className={styles.specialImage} src={specialImage} alt={specialImage.split("_").join(" ")} />
+                    <img
+                        ref={specialImageEl}
+                        className={styles.specialImage}
+                        src={specialImage}
+                        alt={specialImage.split("_").join(" ")}
+                    />
                 </div>
             </div>
             <div>
-                <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
+                <div
+                    style={{
+                        width: "100%",
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                    }}
+                >
                     <div style={{ width: "80%" }}>
-                        <iframe style={{ border: "solid transparent", borderRadius: "4px" }} width="100%" height="415"
-                            src="https://youtube.com/embed/8GbabdQT6RQ">
-                        </iframe>
+                        <iframe
+                            style={{
+                                border: "solid transparent",
+                                borderRadius: "4px",
+                            }}
+                            width="100%"
+                            height="415"
+                            src="https://youtube.com/embed/8GbabdQT6RQ"
+                        ></iframe>
                     </div>
                 </div>
             </div>
 
             <div className={styles.activityDesc}>
-                <img loading="lazy" src="/hero_desc.jpg" alt="Activity Description" />
+                <img
+                    loading="lazy"
+                    src="/hero_desc.jpg"
+                    alt="Activity Description"
+                />
                 <p>
-                    TiC aims a providing Cameroonian students with opportunities for self-initiative that are led by their ability to identify, understand and address community challenges with creative and innovative business solution.
-
-                    Over a period of two months, students will solve community challenges while learning tech and some entrepreneurial skills
+                    TiC aims a providing Cameroonian students with opportunities
+                    for self-initiative that are led by their ability to
+                    identify, understand and address community challenges with
+                    creative and innovative business solution. Over a period of
+                    two months, students will solve community challenges while
+                    learning tech and some entrepreneurial skills
                 </p>
             </div>
 
@@ -86,7 +111,7 @@ const HomePage: React.FC = (): JSX.Element => {
 
             <Footer />
         </>
-    )
-}
+    );
+};
 
 export default HomePage;
