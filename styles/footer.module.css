@@ -4,13 +4,19 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: rgb(21, 130, 255);
+  background-color: #03204b;
   margin-top: 2em;
   padding-top: 1em;
+  color: white;
 }
 
 .footer a {
-  color: black;
+  color: white;
+}
+
+.footer h3 {
+  color: #f7cb48;
+  margin-bottom: 0.5em;
 }
 
 .footer__top {

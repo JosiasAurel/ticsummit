@@ -8,31 +8,35 @@ const Footer: React.FC = () => {
     return (
         <footer className={styles.footer}>
             <div className={styles.footer__top}>
-                <ul className={styles.criteria}>
-                    <li>Must be a student residing in Cameroon</li>
-                    <li>Age between 13 and 20</li>
-                    <li>Be passionate about solving problems in your community</li>
-                </ul>
-                <ul className={styles.pageNav} style={{
-                    listStyleType: "none"
-                }}>
-                    <li>
-                        <a href="#">
-                            Apply for the event
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            Hackathons
-                        </a>
-                    </li>
-                    <li>
-                        <a href="/blog">Blog</a>
-                    </li>
-                    <li>
-                        <a href="/contact">Get In Touch</a>
-                    </li>
-                </ul>
+                <div className="flex-col">
+                    <h3>Eligibility Criteria</h3>
+                    <ul className={styles.criteria}>
+                        <li>Must be a student residing in Cameroon</li>
+                        <li>Age between 13 and 20</li>
+                        <li>Be passionate about solving problems in your community</li>
+                    </ul>
+                </div>
+                <div className="flex-col">
+                    <h3>Useful Links</h3>
+                    <ul className={styles.pageNav}>
+                        <li>
+                            <a href="#">
+                                Apply for the event
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Hackathons
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/blog">Blog</a>
+                        </li>
+                        <li>
+                            <a href="/contact">Get In Touch</a>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <h3>Offices</h3>
                     <p>Montee Sciences, Yaounde, Cameroon</p>

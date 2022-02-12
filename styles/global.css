@@ -28,3 +28,14 @@ body {
     opacity: 0;
   }
 }
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.flex-col * {
+  width: 100%;
+}
