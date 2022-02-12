@@ -7,7 +7,7 @@
     "test": "jest",
     "dev": "next dev",
     "correct": "set NODE_OPTIONS=--openssl-legacy-provider",
-    "prettify": "echo {}> .prettierrc.json"
+    "prettify": "yarn prettier --write ."
   },
   "keywords": [
     "blog",
