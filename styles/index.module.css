@@ -57,6 +57,45 @@
   max-width: 60%;
 }
 
+.stayInTouch {
+  margin: 1em 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #235ea0;
+  padding: 1em 2em;
+}
+
+.stayInTouch * {
+  max-width: 350px;
+}
+
+.stayInTouch h1 {
+  font-weight: bolder;
+  font-size: 3em;
+  color: #f7cb48;
+}
+
+.stayInTouch form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.stayInTouch form input {
+  margin: 1em 0;
+  border: solid transparent;
+  background-color: #f7cb48;
+  padding: 1em 2em;
+  border-radius: 8px;
+}
+
+.stayInTouch form input:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 450px) {
   .heroText h1 {
     font-size: 2.5em;

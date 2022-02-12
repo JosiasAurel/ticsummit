@@ -7,6 +7,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Button from "../components/Button";
 import Special from "../components/Special";
+import StayInTouch from "../components/StayInTouch";
 
 // import content
 import { heroText, specials } from "../content/index";
@@ -31,7 +32,9 @@ const HomePage: React.FC = (): JSX.Element => {
                     <p>
                         {heroText}
                     </p>
-                    <Button text="Sponsor Us Now" />
+                    <Button>
+                        Sponsor Us Now
+                    </Button>
                 </div>
             </main>
 
@@ -74,6 +77,10 @@ const HomePage: React.FC = (): JSX.Element => {
 
                     Over a period of two months, students will solve community challenges while learning tech and some entrepreneurial skills
                 </p>
+            </div>
+
+            <div>
+                <StayInTouch />
             </div>
 
             <Footer />
