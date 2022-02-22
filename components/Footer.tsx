@@ -22,7 +22,12 @@ const Footer: React.FC = () => {
                     <h3>Useful Links</h3>
                     <ul className={styles.pageNav}>
                         <li>
-                            <a href="#">Apply for the event</a>
+                            <a
+                                href="https://forms.gle/qyobUuPtP2mvo59z6
+"
+                            >
+                                Apply for the event
+                            </a>
                         </li>
                         <li>
                             <a href="#">Hackathons</a>

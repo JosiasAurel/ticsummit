@@ -45,3 +45,15 @@
 .socialNav * {
     margin: 0.5em 0.3em;
 }
+
+@media screen and (max-width: 500px) {
+    .footer__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .footer__top * {
+        width: 90%;
+    }
+}

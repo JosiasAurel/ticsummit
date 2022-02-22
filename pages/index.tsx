@@ -13,11 +13,16 @@ import StayInTouch from "../components/StayInTouch";
 import { heroText, specials } from "../content/index";
 
 const HomePage: React.FC = (): JSX.Element => {
+    const [screenWidth, setScreenWidth] = React.useState<number>(0);
     // special image
     const [specialImage, setSpecialImage] =
         React.useState<string>("/cam_largest.jpg");
     const specialImageEl = React.useRef(null);
 
+    // getting the device screen width when component mounts
+    React.useEffect(() => {
+        setScreenWidth(window.innerWidth);
+    });
     return (
         <>
             <head>
@@ -33,7 +38,15 @@ const HomePage: React.FC = (): JSX.Element => {
                 </div>
             </main>
 
-            <div style={{ margin: "1em" }}>
+            <div
+                style={{
+                    margin: "1em",
+                    display: "flex",
+                    flexDirection: "column",
+                    justifyContent: "space-evenly",
+                    alignItems: "center",
+                }}
+            >
                 <h1>What Makes TiC Special ?</h1>
                 <div className={styles.specialsCtn}>
                     <div>
@@ -44,26 +57,33 @@ const HomePage: React.FC = (): JSX.Element => {
                                     description={special.content}
                                     image={special.image}
                                     clickAction={(v: string) => {
-                                        setSpecialImage(v);
-                                        specialImageEl.current.classList.add(
-                                            "imageMoveUpClass"
-                                        );
-                                        setTimeout(() => {
-                                            specialImageEl.current.classList.remove(
+                                        if (screenWidth > 500) {
+                                            setSpecialImage(v);
+                                            specialImageEl.current.classList.add(
                                                 "imageMoveUpClass"
                                             );
-                                        }, 1000);
+                                            setTimeout(() => {
+                                                specialImageEl.current.classList.remove(
+                                                    "imageMoveUpClass"
+                                                );
+                                            }, 1000);
+                                        } else {
+                                        }
                                     }}
                                 />
                             );
                         })}
                     </div>
-                    <img
-                        ref={specialImageEl}
-                        className={styles.specialImage}
-                        src={specialImage}
-                        alt={specialImage.split("_").join(" ")}
-                    />
+                    {screenWidth > 500 ? (
+                        <img
+                            ref={specialImageEl}
+                            className={styles.specialImage}
+                            src={specialImage}
+                            alt={specialImage.split("_").join(" ")}
+                        />
+                    ) : (
+                        ""
+                    )}
                 </div>
             </div>
             <div>

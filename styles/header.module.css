@@ -24,3 +24,9 @@
     background-color: black;
     color: white;
 }
+
+@media screen and (max-width: 500px) {
+    .header .navLinks {
+        display: none;
+    }
+}
