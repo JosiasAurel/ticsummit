@@ -10,7 +10,7 @@ import Special from "../components/Special";
 import StayInTouch from "../components/StayInTouch";
 
 // import content
-import { heroText, specials } from "../content/index";
+import { heroText, specials, about } from "../content/index";
 
 import Link from "next/link";
 
@@ -121,12 +121,7 @@ const HomePage: React.FC = (): JSX.Element => {
                     alt="Activity Description"
                 />
                 <p>
-                    TiC aims a providing Cameroonian students with opportunities
-                    for self-initiative that are led by their ability to
-                    identify, understand and address community challenges with
-                    creative and innovative business solutions. Over a period of
-                    two months, students will solve community challenges while
-                    learning tech and some entrepreneurial skills...
+                    {about.slice(0, 300)}... <br />
                     <Link href="/about">
                         <Button>
                             Read More

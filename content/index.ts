@@ -8,7 +8,7 @@ const specials: SpecialInfo[] = [
     },
     {
         content:
-            "TiC looks for brillance brilliance in youths that are capable of giving of their best in solving community problems using tech.",
+            "All students have a brilliant side to them, we are looking for this and providing a platform to inspire, mentor, grow, and empower them to emerge in the future as Tech entrepreneurs and Leaders",
         image: "/brillance.jpg",
     },
     {
@@ -17,6 +17,22 @@ const specials: SpecialInfo[] = [
         image: "/prizing.jpg",
     },
 ];
+
+const about: string = `Cameroonian students in the secondary schools are talented. We know this first hand. TiC is the perfect platform for young students to express their creativity and abilities to innovate. 
+
+We're inspiring the next generation of technology entrepreneurs. Over a period of one month, our young innovators will learn from our mentors and trainers, through our online training program and rich curriculum.
+
+At the end of the one-month training program, we will select the best teams/projects to participate in a three-day summit in Yaounde. Selected participants will learn from some of nations young and talented technology entrepreneurs, during special workshops organized at the major technology centers in the city of Yaoundé.
+
+Innovation Centers like the National Polytechnique Yaoundé Laboratory, Ongola Fablabs, the ICT-University Cameroon -  are all on the menu.
+
+The experience will be career changing for all our participants, full of inspiration and learning.
+
+Our three-day summit closes with a unique award Ceremony, which will be dignified by some of the major Tech stakeholders in the country. Cash prizes will be awarded to the very best projects at this award ceremony.
+
+Register today with your team and your solution.
+
+Together let's build the future we desire.`;
 
 const courses: CourseInfo[] = [
     {
@@ -71,4 +87,4 @@ const courses: CourseInfo[] = [
     }
 ];
 
-export { heroText, specials, courses };
+export { heroText, specials, courses, about };

@@ -46,3 +46,26 @@
 .Course img {
     max-width: 250px;
 }
+
+.about__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__registerBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7cb48;
+    border: solid transparent;
+    border-radius: 10px;
+    margin: 3em;
+    padding: 1em;
+}
+
+.about__registerBlock img {
+    border-radius: 10px;
+}

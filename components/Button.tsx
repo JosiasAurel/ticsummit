@@ -4,15 +4,16 @@ import React from "react";
 type Props = {
     action?: Function;
     type?: "button" | "submit" | "reset";
+    variant?: "blue" | "yellow"
 };
-const Button: React.FC<Props> = ({ children, action, type }): JSX.Element => {
+const Button: React.FC<Props> = ({ children, action, type, variant }): JSX.Element => {
     return (
         <button
             type={type}
             style={{
                 borderRadius: "50px",
                 color: "black",
-                backgroundColor: "#F7CB48",
+                backgroundColor: variant === "yellow" ? "#F7CB48" : "#235ea0",
                 border: "solid transparent",
                 padding: "1em 2.5em",
                 fontWeight: "bolder",
