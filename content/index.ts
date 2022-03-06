@@ -18,4 +18,57 @@ const specials: SpecialInfo[] = [
     },
 ];
 
-export { heroText, specials };
+const courses: CourseInfo[] = [
+    {
+        title: "Design Thinking Part 1",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Design Thinking Part 2",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Problem Solving Essentials",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Ideation",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Essentials of Prototyping",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Developing a business model",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Developing a business plan",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Project presentation & Pitching",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Project Management",
+        url: "/",
+        image: "/csph.png"
+    },
+    {
+        title: "Team Management",
+        url: "/",
+        image: "/csph.png"
+    }
+];
+
+export { heroText, specials, courses };
