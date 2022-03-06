@@ -3,17 +3,17 @@ const heroText: string = `TiC is a growing community of innovators, built on the
 const specials: SpecialInfo[] = [
     {
         content:
-            "Cameroon's first and larget tech innovation challenge for youths",
+            "Cameroon's first and largest tech innovation challenge for youths",
         image: "/cam_largest.jpg",
     },
     {
         content:
-            "TiC looks for brillance brilliance in youths in secondary school in Cameroon that are capable of giving of their best in solving community problems using tech.",
+            "TiC looks for brillance brilliance in youths that are capable of giving of their best in solving community problems using tech.",
         image: "/brillance.jpg",
     },
     {
         content:
-            "TiC provide oppurtinities for youths to innovate express their creativity and solve problems using technology.",
+            "TiC provide oppurtinities for youths to innovate, express their creativity, and solve problems using technology.",
         image: "/prizing.jpg",
     },
 ];
