@@ -29,3 +29,20 @@
     margin: 0.8em;
 }
 /* Special Card - End */
+
+/* course component */
+.Course {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    border: solid 1px black;
+    margin: 1em;
+    padding: 1em;
+}
+
+.Course img {
+    max-width: 250px;
+}

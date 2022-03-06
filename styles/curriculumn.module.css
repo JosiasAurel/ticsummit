@@ -1,0 +1,18 @@
+.courriculumnContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0;
+}
+
+.curriculumn {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 450px) {
+    .curriculumn {
+        display: flex;
+        flex-direction: column;
+    }
+}
