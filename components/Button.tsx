@@ -13,7 +13,7 @@ const Button: React.FC<Props> = ({ children, action, type, variant }): JSX.Eleme
             style={{
                 borderRadius: "50px",
                 color: "black",
-                backgroundColor: variant === "yellow" ? "#F7CB48" : "#235ea0",
+                backgroundColor: variant === "blue" ? "#235ea0" : "#f7cb48",
                 border: "solid transparent",
                 padding: "1em 2.5em",
                 fontWeight: "bolder",
