@@ -1,5 +1,4 @@
-const heroText: string = `TiC aims a providing Cameroonian students with opportunities for self-initiative that are led by their ability to identify, understand and address community challenges with creative and innovative business solution.
-                        Over a period of two months, students will solve community challenges while learning tech and some entrepreneurial skills`;
+const heroText: string = `TiC is a growing community of innovators, built on the strength of young, impact-driven Cameroonians. We’re passionate about solving problems with technology. Share this same passion? Join us at this year’s tech innovation challenge, designed for secondary and high school students across Cameroon. Register today with your team and your project, together let’s build the future we deserve.`;
 
 const specials: SpecialInfo[] = [
     {

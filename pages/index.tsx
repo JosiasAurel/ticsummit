@@ -12,6 +12,8 @@ import StayInTouch from "../components/StayInTouch";
 // import content
 import { heroText, specials } from "../content/index";
 
+import Link from "next/link";
+
 const HomePage: React.FC = (): JSX.Element => {
     const [screenWidth, setScreenWidth] = React.useState<number>(0);
     // special image
@@ -32,9 +34,12 @@ const HomePage: React.FC = (): JSX.Element => {
             <main className={styles.topMain}>
                 <img loading="lazy" src="/fun_training.jpg" alt="training" />
                 <div className={styles.topCTA}>
-                    <h1>About the Program</h1>
+                    <h1>Building the next generation of African innovators</h1>
                     <p>{heroText}</p>
-                    <Button>Sponsor Us Now</Button>
+                    <a href="https://bit.ly/3oyFybP">
+                        <Button>Apply Now</Button>
+                    </a>
+
                 </div>
             </main>
 
@@ -121,7 +126,12 @@ const HomePage: React.FC = (): JSX.Element => {
                     identify, understand and address community challenges with
                     creative and innovative business solution. Over a period of
                     two months, students will solve community challenges while
-                    learning tech and some entrepreneurial skills
+                    learning tech and some entrepreneurial skills...
+                    <Link href="/about">
+                        <Button>
+                            Read More
+                        </Button>
+                    </Link>
                 </p>
             </div>
 

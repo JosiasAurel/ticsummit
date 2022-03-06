@@ -23,6 +23,10 @@
     font-size: 1.2em;
 }
 
+.topCTA h1 {
+    font-size: 1.6em;
+}
+
 .topCTA * {
     margin-bottom: 10%;
 }
