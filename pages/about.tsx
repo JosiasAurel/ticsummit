@@ -60,7 +60,7 @@ const AboutPage: React.FC = (): JSX.Element => {
                     <br />
                     Together, let's build the future we desire.
                 </p>
-                <a href="https://bit.ly/3oyFybP">
+                <a href="https://forms.gle/Tq2cyn264GYrQc4m9">
                     <Button variant="blue">
                         Register and Make a Change 👋
                     </Button>

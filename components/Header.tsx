@@ -18,7 +18,7 @@ const Header: React.FC = (): JSX.Element => {
                     <a className={styles.headerNavLink}>Curriculum</a>
                 </Link>
                 <a
-                    href="https://bit.ly/3oyFybP"
+                    href="https://forms.gle/Tq2cyn264GYrQc4m9"
                     className={styles.headerNavLink}
                 >
                     Register

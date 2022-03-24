@@ -36,7 +36,7 @@ const HomePage: React.FC = (): JSX.Element => {
                 <div className={styles.topCTA}>
                     <h1>Building the next generation of African innovators</h1>
                     <p>{heroText}</p>
-                    <a href="https://bit.ly/3oyFybP">
+                    <a href="https://forms.gle/Tq2cyn264GYrQc4m9">
                         <Button>Apply Now</Button>
                     </a>
 
