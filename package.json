@@ -4,7 +4,8 @@
   "description": "The official site for TiCSummit 2023",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build"
   },
   "repository": {
     "type": "git",
