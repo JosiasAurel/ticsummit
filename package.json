@@ -1,30 +1,30 @@
 {
-  "name": "ticummit2023",
-  "version": "1.0.0",
-  "description": "The official site for TiCSummit 2023",
-  "main": "index.js",
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/JosiasAurel/ticsummit.git"
-  },
-  "keywords": [
-    "website",
-    "landing",
-    "page"
-  ],
-  "author": "Josias Aurel",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/JosiasAurel/ticsummit/issues"
-  },
-  "homepage": "https://github.com/JosiasAurel/ticsummit#readme",
-  "dependencies": {
-    "next": "^13.1.6",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  }
+    "name": "ticummit2023",
+    "version": "1.0.0",
+    "description": "The official site for TiCSummit 2023",
+    "main": "index.js",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/JosiasAurel/ticsummit.git"
+    },
+    "keywords": [
+        "website",
+        "landing",
+        "page"
+    ],
+    "author": "Josias Aurel",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/JosiasAurel/ticsummit/issues"
+    },
+    "homepage": "https://github.com/JosiasAurel/ticsummit#readme",
+    "dependencies": {
+        "next": "^13.1.6",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0"
+    }
 }
