@@ -6,9 +6,6 @@ const LandingPage = () => {
     React.useEffect(() => {
         const $ = (id) => document.getElementById(id);
 
-        const header = $("header");
-        header.style.visibility = "hidden";
-
         // intersection observer options
         let options = {
             root: null, // use browser viewport
