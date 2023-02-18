@@ -1,5 +1,5 @@
 import React from "react";
-import { ticSummitInfoText, detailedInfos, faq, whatTic, organizers } from "../constants.js";
+import { ticSummitInfoText, detailedInfos, faq, whatTic, organizers, sponsors } from "../constants.js";
 import CountDown from "../components/counter.jsx";
 import Organizer from "../components/organizer.jsx";
 import Script from "next/script.js";
@@ -92,6 +92,7 @@ const LandingPage = () => {
                 alignItems: "center"
             }}>
                 <h2>Organizers</h2>
+                <h3>Made by teens, for teens!</h3>
                 <div className="org-grid">
                     {organizers.map(organizer => (
                         <Organizer
@@ -99,6 +100,22 @@ const LandingPage = () => {
                             image={organizer.image}
                             role={organizer.role}
                         />
+                    ))}
+                </div>
+            </div>
+
+            <div style={{
+                margin: "2em",
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center"
+            }}>
+                <h1>Sponsors</h1>
+                <div>
+                    {sponsors.map(sponsor => (
+                        <img style={{ margin: "0.5em" }} src={sponsor} />
                     ))}
                 </div>
             </div>

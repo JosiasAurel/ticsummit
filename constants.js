@@ -22,6 +22,11 @@ export const organizers = [
     },
 ];
 
+export const sponsors = [
+    "https://static.wixstatic.com/media/81c307_e296d1f9f7df4567ae1fafa4298da55c~mv2_d_2855_2070_s_2.png/v1/fill/w_91,h_66,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/81c307_e296d1f9f7df4567ae1fafa4298da55c~mv2_d_2855_2070_s_2.png",
+    "https://ictuniversity.org/wp-content/uploads/2021/03/ictu-logo.png",
+];
+
 export const whatTic = `TIC is a growing community of innovators, buit on the strength of young, impact-driven Cameroonians. We’re passionate about solving problems using
 technology. Share this same passion? Join us at this year’s technovation challenge, designed for secondary and high school students across Cameroon. 
 Register today with your team and you  project, together let’s build the future we deserve `;
