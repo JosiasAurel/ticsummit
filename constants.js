@@ -1,24 +1,23 @@
 export const organizers = [
-
     {
         name: "Terry Nanje",
         image: "/terry.jpeg",
-        role: "Outreach, Marketing"
+        role: "Outreach, Marketing",
     },
     {
         name: "Bissai Philomene",
         image: "/philomene.jpeg",
-        role: "Marketing"
+        role: "Marketing",
     },
     {
         name: "Moukam Jules",
         image: "/jules.jpeg",
-        role: "Planning, overlooking"
+        role: "Planning, overlooking",
     },
     {
         name: "Josias Aurel",
         image: "/josias.jpg",
-        role: "Organizer, Development"
+        role: "Organizer & Coordinator, Development",
     },
 ];
 
