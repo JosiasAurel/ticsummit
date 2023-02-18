@@ -84,8 +84,7 @@ const LandingPage = () => {
             </div>
 
             <div style={{
-                margin: "2em",
-                width: "100%",
+                width: "100vw",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-evenly",
@@ -105,13 +104,12 @@ const LandingPage = () => {
             </div>
 
             <div style={{
-                margin: "2em",
-                width: "100%",
+                width: "100vw",
                 display: "flex",
                 flexDirection: "column",
                 justifyContent: "space-evenly",
                 alignItems: "center"
-            }}>
+            }} className="sponsors">
                 <h1>Sponsors</h1>
                 <div>
                     {sponsors.map(sponsor => (
