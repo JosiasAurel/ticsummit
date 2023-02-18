@@ -60,6 +60,12 @@ const LandingPage = () => {
                 </div>
 
                 <div>
+                    <h1>Program outline</h1>
+                    <h1>Coming soon!</h1>
+                    <br />
+                </div>
+
+                <div>
                     <h1>Frequently asked questions (FAQ)</h1>
                     {faq.map((qa) => (
                         <>
