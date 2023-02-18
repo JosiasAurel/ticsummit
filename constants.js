@@ -1,3 +1,31 @@
+export const organizers = [
+
+    {
+        name: "Terry Nanje",
+        image: "/terry.jpeg",
+        role: "Outreach, Marketing"
+    },
+    {
+        name: "Bissai Philomene",
+        image: "/philomene.jpeg",
+        role: "Marketing"
+    },
+    {
+        name: "Moukam Jules",
+        image: "/jules.jpeg",
+        role: "Planning, overlooking"
+    },
+    {
+        name: "Josias Aurel",
+        image: "/josias.jpg",
+        role: "Organizer, Development"
+    },
+];
+
+export const whatTic = `TIC is a growing community of innovators, buit on the strength of young, impact-driven Cameroonians. We’re passionate about solving problems using
+technology. Share this same passion? Join us at this year’s technovation challenge, designed for secondary and high school students across Cameroon. 
+Register today with your team and you  project, together let’s build the future we deserve `;
+
 export const ticSummitInfoText = `
     It is an annual hackathon and pitching competition hosted by the TiC foundation with the main aim of fostering creativity amongst secondary school students by giving them a chance to present projects on various topics ranging from Artificial intelligence to rocket science and why not even space technology.
     ---

@@ -1,134 +1,116 @@
 import React from "react";
-import { ticSummitInfoText, detailedInfos, faq } from "../constants.js";
+import { ticSummitInfoText, detailedInfos, faq, whatTic, organizers } from "../constants.js";
+import CountDown from "../components/counter.jsx";
+import Organizer from "../components/organizer.jsx";
+import Script from "next/script.js";
 
 const LandingPage = () => {
 
-    React.useEffect(() => {
-        const $ = (id) => document.getElementById(id);
-
-        // intersection observer options
-        let options = {
-            root: null, // use browser viewport
-            threshold: 0.2,
-            rootMargin: "0px",
-        };
-
-        function handler(entries, observer) {
-            const header = $("header");
-            entries.forEach((entry) => {
-                if (entry.isIntersecting) {
-                    header.style.opacity = 0;
-                } else header.style.opacity = 1;
-            });
-
-            // alert("No longer viewing registration button");
-        }
-
-        let target = $("main");
-        let observer = new IntersectionObserver(handler, options);
-
-        observer.observe(target);
-    }, []);
     return (
-        <div className="landingPage">
-            <header id="header">
-                <h2>Summit 2023</h2>
-                <button id="register-btn">Register Now</button>
-            </header>
-            <main
-                id="main"
-                style={{
-                    margin: "0 0.5em",
-                }}
-            >
-                <div>
-                    <h1
-                        style={{
-                            fontSize: "3em",
-                            textAlign: "start",
-                            margin: "0 0.8em",
-                        }}
-                    >
-                        The future depends on you...
-                        <br /> you got the potential <br /> <em>to mold it!</em>
-                    </h1>
+        <div>
+            <head>
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.jquery.min.js" />
+                <Script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            </head>
+            <main>
+                <div className="hero-cover">
+                    <h1>Learn to Build, Build to serve.</h1>
+                    <h2>Tech Innovative Club presents <br /> <br /> <em>TiC Summit 2023</em></h2>
+
+                    <br />
+                    <h1>Happening April 29, 2023</h1>
+                    <br />
+                    <button>Register</button>
                 </div>
-                <span
-                    style={{
-                        marginTop: "1.4em",
-                    }}
-                >
-                    <p
-                        style={{
-                            textAlign: "center",
-                            fontSize: "1.7em",
-                        }}
-                    >
-                        From <strong>April 2 - 4</strong>, come unleash your
-                        creativity <br /> and win amazing prizes.
-                    </p>
-                </span>
-
-                <button id="register-btn">Register Now</button>
+                <div className="hero-filler"></div>
             </main>
+            <div className="scroll-cta"><img src="/mouse.svg" /></div>
+            <div className="main-content">
+                <div
 
-            <div
-                id="obs"
-                style={{
-                    margin: "0 1.3em",
-                }}
-            >
-                <h2>What is TiC Summit?</h2>
-                {ticSummitInfoText.split("---").map((msg) => (
-                    <>
-                        <p> {msg} </p>
-                    </>
-                ))}
-                <br />
-                <h2>2023 Application deadline: March 15th</h2>
-            </div>
+                    className="info-1">
+                    <div className="text-1">
+                        <h1>What is TiC Summit?</h1>
+                        <p>{whatTic}</p>
+                    </div>
+                    <div>
+                        <img src="/shower1.jpg" />
+                    </div>
+                </div>
 
-            <div
-                style={{
-                    margin: "0 1.3em",
-                }}
-            >
-                {Object.keys(detailedInfos).map((info) => (
-                    <>
-                        <h2>{info}</h2>
+                <div className="info-1">
+                    <div className="text-1">
+
+                        <h1>Why participate?</h1>
                         <ul>
-                            {detailedInfos[info].map((item) => (
-                                <li>{item}</li>
-                            ))}
+                            <li>
+                                You get the chance to learn design-thinking, and sharpen your ability to identify and greatly design solutions to problems your community faces.
+                            </li>
+                            <li>
+                                Join a community of like-minded and amazing teenagers, connect and build together.
+                            </li>
+                            <li>
+                                Stickers, swag and free internet ;)
+                            </li>
                         </ul>
-                    </>
-                ))}
+                    </div>
+                    <div>
+                        <img src="/shower2.jpg" />
+                    </div>
+                </div>
+
+                <div>
+                    <h1>Frequently asked questions (FAQ)</h1>
+                    {faq.map((qa) => (
+                        <>
+                            <p>
+                                <b>Question</b>: {qa.q}
+                            </p>
+                            <p>
+                                <b>Answer</b>: {qa.a}
+                            </p>
+                        </>
+                    ))}
+                </div>
             </div>
 
-            <div
-                style={{
-                    margin: "0 1.3em",
-                }}
-            >
-                <h2>Frequently asked questions (FAQ)</h2>
-                {faq.map((qa) => (
-                    <>
-                        <p>
-                            <b>Question</b>: {qa.q}
-                        </p>
-                        <p>
-                            <b>Answer</b>: {qa.a}
-                        </p>
-                    </>
-                ))}
+            <div className="cta3">
+                <h1>What are you waiting for?</h1>
+                <button>Come have fun!</button>
+                <br />
+                <img src="/cta3.jpg" />
+                <p>Our friend, Henry, performing at his best {"<3"} </p>
+
             </div>
+
+            <div style={{
+                margin: "2em",
+                width: "100%",
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "space-evenly",
+                alignItems: "center"
+            }}>
+                <h2>Organizers</h2>
+                <div className="org-grid">
+                    {organizers.map(organizer => (
+                        <Organizer
+                            name={organizer.name}
+                            image={organizer.image}
+                            role={organizer.role}
+                        />
+                    ))}
+                </div>
+            </div>
+
             <footer>
                 <a href="">Facebook</a>
                 <a href="">Twitter</a>
                 <a href="">Instagram</a>
             </footer>
+
         </div>
-    );
+    )
 };
 
 export default LandingPage;

@@ -8,6 +8,7 @@
 
 body {
     margin: 0;
+    overflow-x: hidden;
 }
 
 header {
@@ -25,9 +26,113 @@ header {
 main {
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
+    background-image: url("/hero.jpg");
+    background-size: cover;
+}
+
+main button {
+    font-size: 0.5em;
+}
+
+.hero-cover {
+    height: 100vh;
+    width: 50%;
+    padding: 2em;
+    font-size: 2em;
+    background-color: #e5e5f7;
+    backdrop-filter: blur(5px);
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.8500000000000001px, transparent 0.8500000000000001px), radial-gradient(#444cf7 0.8500000000000001px, #e5e5f7 0.8500000000000001px);
+    background-size: 34px 34px;
+    background-position: 0 0, 17px 17px;
+}
+
+.scroll-cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scroll-cta img {
+    position: relative;
+    top: -80px;
+    width: 50px;
+    animation-name: please-scroll;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+
+@keyframes please-scroll {
+    from {
+        top: -80px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+.main-content {
+    margin: 2em;
+}
+
+.text-1 p {
+    max-width: 60%;
+}
+
+.text-1 li {
+    max-width: 60%;
+}
+
+.info-1 {
+    margin: 2em 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-1 img {
+    max-width: 800px;
+}
+
+.cta3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cta3 img {
+    max-width: 80%;
+}
+
+.organizer {
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    border: dotted 2px blue;
+    width: fit-content;
+}
+
+.org-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+}
+
+.organizer img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+.organizer span {
+    margin: 0 1em;
 }
 
 em {
@@ -41,6 +146,7 @@ button {
     background-color: blue;
     color: white;
     font-weight: bolder;
+    opacity: 1 !important;
 }
 
 button:active {
@@ -57,12 +163,12 @@ li {
 }
 
 @media screen and (max-width: 500px) {
-    main > div > h1 {
+    main>div>h1 {
         margin: 0 0.2em !important;
         fontsize: 1em !important;
     }
 
-    main > span {
+    main>span {
         margin-top: 1em !important;
     }
 
