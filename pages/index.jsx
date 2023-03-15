@@ -107,6 +107,7 @@ const LandingPage = () => {
                 <p>Our friend, Henry, performing at his best {"<3"} </p>
             </div>
 
+            {/*
             <div
                 style={{
                     width: "100vw",
@@ -128,6 +129,7 @@ const LandingPage = () => {
                     ))}
                 </div>
             </div>
+            */}
 
             <div
                 style={{
