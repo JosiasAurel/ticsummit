@@ -149,6 +149,8 @@ const LandingPage = () => {
                 </div>
             </div>
 
+            <p style={{ textAlign: "center" }}>You can <a href="https://bank.hackclub.com/donations/start/tic-summit">donate</a> to support this event.</p>
+
             <footer>
                 <a href="">Facebook</a>
                 <a href="">Twitter</a>
