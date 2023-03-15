@@ -27,14 +27,16 @@ const LandingPage = () => {
                 <div className="hero-cover">
                     <h1>Learn to Build, Build to serve.</h1>
                     <h2>
-                        Tech Innovative Club presents <br /> <br />{" "}
+                        Tech Innovative Club presents <br /> {" "}
                         <em>TiC Summit 2023</em>
                     </h2>
 
                     <br />
                     <h1>Happening April 29, 2023</h1>
                     <br />
-                    <button>Register</button>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNwLVTkY7lUyWSG4H27kk66sQiA7xv4Ou3HjbPZoOHy-2WdQ/viewform">
+                        <button>Register</button>
+                    </a>
                 </div>
                 <div className="hero-filler"></div>
             </main>
@@ -97,7 +99,9 @@ const LandingPage = () => {
 
             <div className="cta3">
                 <h1>What are you waiting for?</h1>
-                <button>Come have fun!</button>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdNwLVTkY7lUyWSG4H27kk66sQiA7xv4Ou3HjbPZoOHy-2WdQ/viewform">
+                    <button>Come have fun!</button>
+                </a>
                 <br />
                 <img src="/cta3.jpg" />
                 <p>Our friend, Henry, performing at his best {"<3"} </p>
@@ -148,6 +152,11 @@ const LandingPage = () => {
                 <a href="">Twitter</a>
                 <a href="">Instagram</a>
             </footer>
+            <p style={{
+                textAlign: "center",
+                color: "grey"
+            }}>TiC Summit is fiscally sponsored by <a href="https://hackclub.com/">Hack Club</a>, a 501(c)(3) nonprofit.</p>
+            <br />
         </div>
     );
 };

@@ -55,6 +55,11 @@ main button {
     background-position: 0 0, 17px 17px;
 }
 
+.hero-cover h1 {
+    position: relative;
+    top: -1em;
+}
+
 .scroll-cta {
     display: flex;
     justify-content: center;
