@@ -58,7 +58,7 @@ export const detailedInfos = {
 export const faq = [
     {
         q: "I am an art student but I have an idea, can I apply?",
-        a: "Every secondary school student is welcome to apply as long as they have an idea to solve a problem.",
+        a: "Every secondary school student is welcome to apply.",
     },
     {
         q: "I am alone without any team, can I still apply?",
@@ -66,7 +66,7 @@ export const faq = [
     },
     {
         q: "I don’t have a prototype, can I still apply?",
-        a: "All ideas are welcome as long as they are feasible within the hackathon period.",
+        a: "All ideas are welcome as long as you can build it within the hackathon period.",
     },
     {
         q: "The deadline has passed. Can I still apply?",
